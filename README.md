@@ -23,6 +23,7 @@ Arguments explanation:
 <jms_out>: the name of the named pipe for the coord to write data to the console
   
 Commands Repertoire:
+
 1.submit <job>
 
 2.status <jobID>
