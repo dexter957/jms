@@ -1,0 +1,10 @@
+submit ls
+submit ls -l
+submit pwd
+status-all
+show-active
+show-finished
+submit pgrep pool
+submit date
+show-pools
+submit man cat
