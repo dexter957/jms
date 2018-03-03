@@ -15,4 +15,40 @@ User interface program. Allows the user to submit the commands they want, and co
 In a unix machine, you need to launch jms_console and then, in another terminal, jms_coord. The commads are:
 unixprompt>./jms_console -w <jms_in> -r <jms_out> -o <operations_file>   (the last argument is optional)]
 unixprompt>./jms_coord -l <path> -n <jobs_pool> -r <jms_in> -w <jms_out>
+  
+Arguments explanation:
+<path>:jms maps each process' stdout and stderr to output files, in a separate directory for each process. The path argument indicates the path for these directories.
+<jobs_pool>: the max number of jobs that can be submitted to a pool
+<jms_in>: the name of the named pipe for the console to write data to the coord
+<jms_out>: the name of the named pipe for the coord to write data to the console
+  
+Commands Repertoire:
+1.submit <job>
+
+2.status <jobID>
+
+3.status-all
+
+4.show-active
+
+5.show-pools
+
+6.show-finished
+
+7.suspend <jobID>
+  
+8.resume <jobID>
+  
+9.shutdown
+
+
+
+
+
+
+
+
+
+
+
 
