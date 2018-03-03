@@ -606,14 +606,10 @@ void directoryName(char* dirPath, int jobId, char**dirName)
 	/*Now get the date and time name*/
 	char* dateTime;
 	dateConvertor(&dateTime);
-//	(*dirName)=malloc((strlen(dirPath)+strlen("/")+strlen("_")+strlen("_")+strlen("_")+strlen(jobIdChar)
-//		+strlen(MYSDI)+strlen(pidChar)+strlen(dateTime)+1)*sizeof(char));
 	(*dirName)=malloc((strlen(dirPath)+strlen("/")+strlen("_")+strlen("_")+strlen(jobIdChar)+
 		strlen(pidChar)+strlen(dateTime)+1)*sizeof(char));
 	strcpy((*dirName),dirPath);
 	strcat((*dirName),"/");
-	//strcat((*dirName),MYSDI);
-	//strcat((*dirName),"_");
 	strcat((*dirName),jobIdChar);
 	strcat((*dirName),"_");
 	strcat((*dirName),pidChar);
