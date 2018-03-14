@@ -42,7 +42,8 @@ Commands Repertoire:
   
 9.shutdown
 
-
+jobsCatalogue: A skip list of all the jobs submitted.
+poolList: A list of all the pools. Insertion occurs at the beginning of the list for efficiency; since the newest pools are expected to be queried more often.
 
 
 
